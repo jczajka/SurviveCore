@@ -1,12 +1,10 @@
-﻿using Survive.World;
-using System;
-using System.Numerics;
+﻿using System.Numerics;
 
-namespace Survive.OpenGL.Helper {
+namespace SurviveCore.OpenGL.Helper {
 
-    class Frustum {
+    public class Frustum {
 
-        private Plane[] planes;
+        private readonly Plane[] planes;
 
         public Frustum(Matrix4x4 matrix) {
             planes = new Plane[6];
